@@ -1,0 +1,43 @@
+Electricity Bill Calculator using Static Members
+
+Question: Write a Java program to calculate electricity bill using static rate.
+
+Program:
+class ElectricityBill {
+static double ratePerUnit = 7.5;
+String consumerName;
+int unitsConsumed;
+ElectricityBill(String consumerName, int unitsConsumed) {
+this.consumerName = consumerName;
+this.unitsConsumed = unitsConsumed;
+}
+void calculateBill() {
+double bill = unitsConsumed * ratePerUnit;
+System.out.println("Consumer: " + consumerName);
+System.out.println("Units Consumed: " + unitsConsumed);
+System.out.println("Rate per Unit: " + ratePerUnit);
+System.out.println("Total Bill: " + bill);
+System.out.println("-----------------------");
+}
+}
+public class ElectricityBillDemo {
+public static void main(String[] args) {
+ElectricityBill c1 = new ElectricityBill("Yogi", 120);
+ElectricityBill c2 = new ElectricityBill("Arun", 80);
+c1.calculateBill();
+c2.calculateBill();
+}
+}
+
+
+Output:
+Consumer: Yogi
+Units Consumed: 120
+Rate per Unit: 7.5
+Total Bill: 900.0
+-----------------------
+Consumer: Arun
+Units Consumed: 80
+Rate per Unit: 7.5
+Total Bill: 600.0
+-----------------------
