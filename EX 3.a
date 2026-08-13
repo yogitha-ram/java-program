@@ -1,0 +1,23 @@
+Password Validator using StringBuilder
+
+Question: Write a Java program to reverse a password using StringBuilder.
+
+Program:
+import java.util.Scanner;
+public class PasswordReverser {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter password: ");
+String password = sc.nextLine();
+StringBuilder sb = new StringBuilder(password);
+sb.reverse();
+System.out.println("Original password: " + password);
+System.out.println("Reversed password: " + sb.toString());
+}
+}
+
+
+Output:
+Enter password: Java@123
+Original password: Java@123
+Reversed password: 321@avaJ
