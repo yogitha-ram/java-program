@@ -1,0 +1,57 @@
+Bank Account using Constructor Overloading
+
+Question: Write a Java program to demonstrate constructor overloading in a Bank Account class.
+
+Program:
+
+class BankAccount {
+int accNo;
+String name;
+double balance;
+BankAccount() {
+accNo = 0;
+name = "Unknown";
+balance = 0.0;
+}
+BankAccount(int accNo, String name) {
+this.accNo = accNo;
+this.name = name;
+this.balance = 0.0;
+}
+BankAccount(int accNo, String name, double balance) {
+this.accNo = accNo;
+this.name = name;
+this.balance = balance;
+}
+void display() {
+System.out.println("Account No: " + accNo);
+System.out.println("Name: " + name);
+System.out.println("Balance: " + balance);
+System.out.println("-----------------------");
+}
+}
+public class BankAccountDemo {
+public static void main(String[] args) {
+BankAccount a1 = new BankAccount();
+BankAccount a2 = new BankAccount(101, "Yogi");
+BankAccount a3 = new BankAccount(102, "Kumar", 5000.0);
+a1.display();
+a2.display();
+a3.display();
+}
+}
+
+
+Output:
+Account No: 0
+Name: Unknown
+Balance: 0.0
+-----------------------
+Account No: 101
+Name: Yogi
+Balance: 0.0
+-----------------------
+Account No: 102
+Name: Kumar
+Balance: 5000.0
+-----------------------
