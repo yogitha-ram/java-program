@@ -1,0 +1,32 @@
+Banking System using Interface
+
+program:
+interface Bank {
+void deposit(double amount);
+void withdraw(double amount);
+}
+class Account implements Bank {
+double balance = 1000;
+public void deposit(double amount) {
+balance += amount;
+System.out.println("Deposited: " + amount);
+}
+public void withdraw(double amount) {
+balance -= amount;
+System.out.println("Withdrawn: " + amount);
+}
+}
+public class BankingSystem {
+public static void main(String[] args) {
+Account a = new Account();
+a.deposit(500);
+a.withdraw(300);
+System.out.println("Balance: " + a.balance);
+}
+}
+
+
+Output:
+Deposited: 500.0
+Withdrawn: 300.0
+Balance: 1200.0
