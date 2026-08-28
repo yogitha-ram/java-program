@@ -1,3 +1,4 @@
+<img width="372" height="218" alt="Screenshot 2026-08-28 141903" src="https://github.com/user-attachments/assets/827000b6-ae4a-4333-9003-86eaca64f63e" />
 Button Click Counter using Event Handling
   
 Question: Write a Java program to count the number of button clicks using ActionListener.
