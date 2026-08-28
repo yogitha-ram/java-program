@@ -1,0 +1,30 @@
+Employee Salary Calculator using Console I/O
+
+Program:
+
+import java.util.Scanner;
+class EmployeeSalary {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter Employee Name: ");
+String name = sc.nextLine();
+System.out.print("Enter Employee ID: ");
+int id = sc.nextInt();
+System.out.print("Enter Monthly Salary: ");
+double salary = sc.nextDouble();
+double annualSalary = salary * 12;
+System.out.println("\nEmployee Details");
+System.out.println("Name: " + name);
+System.out.println("ID: " + id);
+System.out.println("Annual Salary: " + annualSalary);
+}
+}
+
+Output:
+Enter Employee Name: Ravi
+Enter Employee ID: 101
+Enter Monthly Salary: 25000
+Employee Details
+Name: Ravi
+ID: 101
+Annual Salary: 300000.0
